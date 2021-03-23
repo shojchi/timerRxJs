@@ -1,0 +1,15 @@
+<h2>Timer: {{ timer | formatter }}</h2>
+
+<div class="buttons"><button *ngIf="!isStopped; then startBlock else stopBlock" (click)="start()">Start/Stop</button>
+
+<ng-template #startBlock><button (click)="start()">Start</button></ng-template>
+<ng-template #stopBlock><button (click)="stop()">Stop</button></ng-template>
+
+<button *ngIf="!isWait; then waitBlock else continueBlock"> </button>
+
+<button (click)="resetTime()">Reset</button>
+
+<ng-template #waitBlock><button (click)="doubleClickFunc()">Wait</button></ng-template>
+
+<ng-template #continueBlock><button (click)="continue()">Continue</button></ng-template>
+</div>

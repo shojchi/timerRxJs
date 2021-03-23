@@ -1,0 +1,16 @@
+h2 {
+  padding: 15px;
+  text-align: center;
+}
+button {
+
+  margin-left: 15px;
+  padding: 5px;
+  width: 75px;
+  background-color: lightcoral;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
